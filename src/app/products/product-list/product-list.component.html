@@ -2,12 +2,6 @@
   <h1>Listado de productos</h1>
   <hr />
   <div class="card mt-3 p-3" *ngFor="let product of products">
-    <app-product></app-product>
-    <h2>
-      Name:
-      <a [routerLink]="['/product', product.id]">{{product.name}}</a>
-    </h2>
-    <div>Price:{{ product.price }}</div>
+    <app-product [product]="product"></app-product>
   </div>
-
 </div>
