@@ -1,15 +1,12 @@
 <div>
-  <h1>Listado de productos</h1>
+  <h1>Details</h1>
   <hr />
-  <div class="card" *ngfor="let product of products">
+  <div class="card mt-3 p-3">
     <h2>
-      <a>{{product.name}}</a>
+      {{product.name}}
     </h2>
     <div>Category:{{ product.category }}</div>
     <div>Description:{{ product.description }}</div>
     <div>Price:{{ product.price }}</div>
-
   </div>
-
-
 </div>
